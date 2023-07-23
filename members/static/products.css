@@ -1,0 +1,8 @@
+#but{
+    position:relative;
+    margin-left: 80px;
+    margin-top:100px;
+}
+#but:hover{
+    background-color:gray;
+}

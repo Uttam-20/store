@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body style="background-color: azure;">
+<h1 style="text-align: center;">Registration Form</h1>
+    <div id="myform1" style="margin-left:500px;margin-top:120px;">
+    <form action="sign" method="GET">
+        <input type="text"  name="fname" placeholder="Username" style="height:30px;" required="True">
+        <br> <br>
+        <input type="text" name="lname" placeholder="Password" style="height:30px;" required="True">
+        <br> <br>
+        <input type="text" name="number" placeholder="Mobile" style="height:30px;" required="True">
+        <br> <br>
+        <input type="text" name="Address" placeholder="Address" style="height:30px;" required="True">
+        <br> <br>
+        <button value="submit">SignUp</button>
+    </form>
+    <br>
+    <a href="/login">Login</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: azure;">
+    
+        <h2>Product &nbsp; &nbsp; Quantity</h2>
+        {% for x in mydata %}
+            <h3 style="display: inline;position:fixed">{{x.proname}}</h3>
+           <h3 style="display: inline;position:fixed;margin-left:140px;">{{x.quantity}}</h3>
+          
+           <br><br>
+        {% endfor %}
+        
+    <img style="width:150px;margin-left: 500px;margin-top: 200px;"src="/media/images/carts.png">
+</body>
+</html>

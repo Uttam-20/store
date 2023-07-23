@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="{% static 'products.css' %}">
+</head>
+<body style="background-color: azure;">
+    <h1>Welcome</h1>
+   {% for x in mydata %}
+    
+    <button id="but"><a href="show/?userid={{cid}}&productid={{x.proid}}"><img id="image" src="/media/{{x.pimg}}"></a></button> 
+   {% endfor %}   
+</body>
+</html>

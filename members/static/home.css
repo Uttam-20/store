@@ -1,0 +1,7 @@
+#order,#account,#logout{
+    border-style: solid;
+    padding: 5px;
+    width:max-content;
+    border-color: red;
+  }
+  

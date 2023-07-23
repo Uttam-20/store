@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body style="background-color: azure;">
+    <div style="height:20px;background-color: black;"></div>
+    <h3>Welcome {{name}}</h3>
+    <div id="menu">
+       <a href="products/?userid={{cid}}"><button style="width:100px;height:30px">Products</button></a>
+       <br><br>
+       <a href="myorders/?userid={{cid}}"><button style="width:100px;height:30px">My Orders</button></a>
+       <br><br>
+       <a href="cart/?userid={{cid}}"><button style="width:100px;height:30px">Cart</button></a>
+       <br> <br>
+       <a href="account/?userid={{cid}}"><button style="width:100px;height:30px">Account</button></a>
+       <br><br>
+       <a href="/logout"><button style="width:100px;height:30px;display: inline;">Logout</button></a>
+       
+    </div>
+    <img style="width:300px;margin-left:500px" src="/media/images/shoppe.png">
+</body>
+</html>
